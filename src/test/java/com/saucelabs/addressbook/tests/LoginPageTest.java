@@ -3,7 +3,6 @@ package com.saucelabs.addressbook.tests;
 import com.saucelabs.addressbook.base.TestBase;
 import com.saucelabs.addressbook.pages.LoginPage;
 import com.saucelabs.addressbook.pages.LogoutPage;
-import com.saucelabs.addressbook.util.TestUtil;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name = "HCP Automation Test Suite"  verbose="1">
+<suite name = "Sauce Addressbook Automation Test Suite"  verbose="1">
 
 	<listeners>
 		<listener class-name="com.saucelabs.addressbook.extentreports.ExtentReportListnerNG" />
 		<listener class-name="com.saucelabs.addressbook.retryanalyzer.RetryAnnotationTransformer" />
 	</listeners>
-
-
-<!--    <test name = "HCP Automation Test Cases">  //TODO - not working with mutiple classes
-      <classes>
-    			<class name = "com.amsarmada.qa.automation.hcp.tests.LoginPageTest" />	 
-         	<class name = "com.amsarmada.qa.automation.hcp.tests.ForgotPasswordPageTest" />                          
-      </classes>
-   </test> -->
   
   
 	<test name="SauceLabs - Addressbook Tests" parallel="methods">

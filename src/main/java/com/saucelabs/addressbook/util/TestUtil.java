@@ -99,14 +99,7 @@ public class TestUtil extends TestBase {
 		element = (new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(locator)));
 
 	}
-		// This utility method should be used for Energy Supply Page 
-		public boolean isDaylightSavingsTime(String startDate) throws Exception{
- 
-				Date date = new SimpleDateFormat("MM/dd/yy").parse(startDate);
-				boolean isDST = TimeZone.getTimeZone("US/Pacific").inDaylightTime(date);
-				return isDST;
-		}
-		
+
 	    
 		public void clickBrowserBackButton() {
 
@@ -155,23 +148,7 @@ public class TestUtil extends TestBase {
 			Actions builder = new Actions(driver);
 			Action moveMouseOver = builder.moveByOffset(50, 50).build();
 			moveMouseOver.perform();
-		}
-		
-
-		
-	// End - These are Selenium UI based utility methods
-	
-
-	    
-	    @Test(priority = 1, enabled = false, groups = { "datavalidation" })
-		public void test()  {
-	    	
-			//TestUtil.getDataPointsForDataValidationTester();
-	    	//logger.info(TestUtil.listOfServiceAccountsFromUtilityAPI);
-	    	
-	    }
-	    
-	    
+		}	
 	    
 }
 
