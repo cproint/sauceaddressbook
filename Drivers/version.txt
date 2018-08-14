@@ -1,0 +1,9 @@
+As of 03/23/2018:
+	Mac Version of Chrome Driver: 2.37 
+	Mac Version of Firefox Driver: 0.20.0  (https://github.com/mozilla/geckodriver/releases)
+	
+	(Note: If tests to run on Linux/mac then down the relavany drivers)
+	
+	If there are new versions then update the driver executables and update this file.
+	
+	Note: After you download new driver, make sure they are executable (chmod 777)

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [HCP Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.saucelabs.addressbook.extentreports.ExtentReportListnerNG"/>
+    <listener class-name="com.saucelabs.addressbook.retryanalyzer.RetryAnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="SauceLabs - Addressbook Tests(failed)" parallel="methods">
+    <classes>
+      <class name="com.saucelabs.addressbook.tests.LoginPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="verifyLoginButton"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.saucelabs.addressbook.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- SauceLabs - Addressbook Tests(failed) -->
+</suite> <!-- Failed suite [HCP Automation Test Suite] -->

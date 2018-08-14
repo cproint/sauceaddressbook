@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7281" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:17Z">
+    <groups>
+      <group name="sanity">
+        <method signature="LogoutPageTest.VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLoginPageIsDisplayed" class="com.saucelabs.addressbook.tests.LogoutPageTest"/>
+        <method signature="LogoutPageTest.VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLogoutPageIsDisplayed" class="com.saucelabs.addressbook.tests.LogoutPageTest"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Default test" duration-ms="7281" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:17Z">
+      <class name="com.saucelabs.addressbook.tests.LogoutPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setExtent" is-config="true" duration-ms="86" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setup" is-config="true" duration-ms="2" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLogoutPageIsDisplayed" duration-ms="3792" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLogoutPageIsDisplayed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="tearDown" is-config="true" duration-ms="91" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLogoutPageIsDisplayed status=SUCCESS method=LogoutPageTest.VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLoginPageIsDisplayed" duration-ms="2960" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginPageIsDisplayed -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="tearDown" is-config="true" duration-ms="90" started-at="2018-08-14T05:10:17Z" finished-at="2018-08-14T05:10:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginPageIsDisplayed status=SUCCESS method=LogoutPageTest.VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="endReport" is-config="true" duration-ms="245" started-at="2018-08-14T05:10:17Z" finished-at="2018-08-14T05:10:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.saucelabs.addressbook.tests.LogoutPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
