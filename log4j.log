@@ -1,2 +1,2 @@
-2018-08-13 22:10:17 INFO  TestBase:76 - Trying to find Element By : By.xpath: //input[@value='Sign in']
-2018-08-13 22:10:17 INFO  TestBase:80 - Found Element By : By.xpath: //input[@value='Sign in']
+2018-08-24 17:34:35 INFO  TestBase:76 - Trying to find Element By : By.cssSelector: div.alert.alert-notice
+2018-08-24 17:34:35 INFO  TestBase:80 - Found Element By : By.cssSelector: div.alert.alert-notice

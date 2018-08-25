@@ -3,6 +3,7 @@ package com.saucelabs.addressbook.tests;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -43,7 +44,7 @@ public class LogoutPageTest extends TestBase{
 	}
 	
 
-	private void setupForLogoutLink(){		
+	private void setupForLogoutLink() throws MalformedURLException{		
 		launchBrowser();
 		loginPage = new LoginPage();
 		loginPage.loginToAddressBook("user@example.com", "password");
@@ -52,7 +53,7 @@ public class LogoutPageTest extends TestBase{
 	}
 	
 	@Test(priority = 1, groups = {"sanity"}, enabled = true)
-	public void VerifyLogoutPageIsDisplayed() {
+	public void VerifyLogoutPageIsDisplayed() throws MalformedURLException {
 		class Local{};
 		extentTest = extent.startTest(Local.class.getEnclosingMethod().getName());
 
@@ -62,15 +63,15 @@ public class LogoutPageTest extends TestBase{
 	
 	
 	@Test(priority = 2, groups = {"sanity"}, enabled = true)
-	public void VerifyLoginPageIsDisplayed() {
+	public void VerifyLoginPageIsDisplayed() throws MalformedURLException {
 		class Local{};
 		extentTest = extent.startTest(Local.class.getEnclosingMethod().getName());
 
 		setupForLogoutLink();
 
 		logoutPage.clickSigoutLink();
-		loginPage = new LoginPage();
-		assertTrue(loginPage.isLoginButtonDisplayed());
+		//loginPage = new LoginPage();
+		assertTrue(new LoginPage().isLoginButtonDisplayed());
 	}
 		
 	@AfterMethod

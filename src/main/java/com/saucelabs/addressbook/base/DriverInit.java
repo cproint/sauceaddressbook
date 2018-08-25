@@ -34,7 +34,7 @@ public class DriverInit {
 		 
 	}
 	
-	public WebDriver openBrowser(String browser){
+	public WebDriver openBrowserWithOptions(String browser){
 
 		if (browser.equalsIgnoreCase("chrome") && System.getProperty("os.name").contains("Mac OS")){
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");				

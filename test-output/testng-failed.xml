@@ -3,15 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucelabs.addressbook.tests.LogoutPageTest">
+      <class name="com.saucelabs.addressbook.tests.LoginPageTest">
         <methods>
+          <include name="verifyLoginPageEmailTextBox"/>
+          <include name="verifyLoginToAddressBookWithInvalidCredentials"/>
+          <include name="endReport"/>
+          <include name="verifyLoginPagePasswordTextBox"/>
           <include name="setExtent"/>
           <include name="setup"/>
-          <include name="endReport"/>
-          <include name="VerifyLoginPageIsDisplayed"/>
+          <include name="startTunnel"/>
           <include name="tearDown"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="stopTunnel"/>
         </methods>
-      </class> <!-- com.saucelabs.addressbook.tests.LogoutPageTest -->
+      </class> <!-- com.saucelabs.addressbook.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

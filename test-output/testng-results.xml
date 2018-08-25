@@ -1,63 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="2" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7281" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:17Z">
+  <suite name="Default suite" duration-ms="102174" started-at="2018-08-20T17:04:59Z" finished-at="2018-08-20T17:06:41Z">
     <groups>
+      <group name="regression">
+        <method signature="LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" class="com.saucelabs.addressbook.tests.LoginPageTest"/>
+      </group> <!-- regression -->
       <group name="sanity">
-        <method signature="LogoutPageTest.VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLoginPageIsDisplayed" class="com.saucelabs.addressbook.tests.LogoutPageTest"/>
-        <method signature="LogoutPageTest.VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLogoutPageIsDisplayed" class="com.saucelabs.addressbook.tests.LogoutPageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageEmailTextBox()[pri:2, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPageEmailTextBox" class="com.saucelabs.addressbook.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginPagePasswordTextBox()[pri:3, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPagePasswordTextBox" class="com.saucelabs.addressbook.tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verifyLoginPageTitle()[pri:1, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPageTitle" class="com.saucelabs.addressbook.tests.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="7281" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:17Z">
-      <class name="com.saucelabs.addressbook.tests.LogoutPageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setExtent" is-config="true" duration-ms="86" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:10Z">
+    <test name="Default test" duration-ms="102174" started-at="2018-08-20T17:04:59Z" finished-at="2018-08-20T17:06:41Z">
+      <class name="com.saucelabs.addressbook.tests.LoginPageTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setExtent" is-config="true" duration-ms="83" started-at="2018-08-20T17:04:59Z" finished-at="2018-08-20T17:04:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setup" is-config="true" duration-ms="2" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:10Z">
+        <test-method status="PASS" signature="startTunnel()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="startTunnel" is-config="true" duration-ms="23811" started-at="2018-08-20T17:04:59Z" finished-at="2018-08-20T17:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTunnel -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="6126" started-at="2018-08-20T17:05:23Z" finished-at="2018-08-20T17:05:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLogoutPageIsDisplayed" duration-ms="3792" started-at="2018-08-14T05:10:10Z" finished-at="2018-08-14T05:10:14Z">
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:1, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPageTitle" duration-ms="73" started-at="2018-08-20T17:05:29Z" finished-at="2018-08-20T17:05:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyLogoutPageIsDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="tearDown" is-config="true" duration-ms="91" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:14Z">
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="118" started-at="2018-08-20T17:05:29Z" finished-at="2018-08-20T17:05:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLogoutPageIsDisplayed status=SUCCESS method=LogoutPageTest.VerifyLogoutPageIsDisplayed()[pri:1, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginPageTitle status=SUCCESS method=LoginPageTest.verifyLoginPageTitle()[pri:1, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="VerifyLoginPageIsDisplayed" duration-ms="2960" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLoginPageIsDisplayed -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="setup" is-config="true" duration-ms="0" started-at="2018-08-14T05:10:14Z" finished-at="2018-08-14T05:10:14Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="4583" started-at="2018-08-20T17:05:29Z" finished-at="2018-08-20T17:05:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="tearDown" is-config="true" duration-ms="90" started-at="2018-08-14T05:10:17Z" finished-at="2018-08-14T05:10:17Z">
+        <test-method status="PASS" signature="verifyLoginPageEmailTextBox()[pri:2, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPageEmailTextBox" duration-ms="811" started-at="2018-08-20T17:05:34Z" finished-at="2018-08-20T17:05:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageEmailTextBox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="113" started-at="2018-08-20T17:05:34Z" finished-at="2018-08-20T17:05:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginPageIsDisplayed status=SUCCESS method=LogoutPageTest.VerifyLoginPageIsDisplayed()[pri:2, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginPageEmailTextBox status=SUCCESS method=LoginPageTest.verifyLoginPageEmailTextBox()[pri:2, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.saucelabs.addressbook.tests.LogoutPageTest@77f99a05]" name="endReport" is-config="true" duration-ms="245" started-at="2018-08-14T05:10:17Z" finished-at="2018-08-14T05:10:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="4724" started-at="2018-08-20T17:05:35Z" finished-at="2018-08-20T17:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginPagePasswordTextBox()[pri:3, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginPagePasswordTextBox" duration-ms="278" started-at="2018-08-20T17:05:39Z" finished-at="2018-08-20T17:05:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPagePasswordTextBox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="148" started-at="2018-08-20T17:05:40Z" finished-at="2018-08-20T17:05:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPagePasswordTextBox status=SUCCESS method=LoginPageTest.verifyLoginPagePasswordTextBox()[pri:3, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="5541" started-at="2018-08-20T17:05:40Z" finished-at="2018-08-20T17:05:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="1842" started-at="2018-08-20T17:05:45Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:05:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@ams.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sasasasassasas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="114" started-at="2018-08-20T17:05:47Z" finished-at="2018-08-20T17:05:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="4142" started-at="2018-08-20T17:05:47Z" finished-at="2018-08-20T17:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="3429" started-at="2018-08-20T17:05:51Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:05:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@ams.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="96" started-at="2018-08-20T17:05:55Z" finished-at="2018-08-20T17:05:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="4252" started-at="2018-08-20T17:05:55Z" finished-at="2018-08-20T17:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="2917" started-at="2018-08-20T17:05:59Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@ams.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="134" started-at="2018-08-20T17:06:02Z" finished-at="2018-08-20T17:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="4379" started-at="2018-08-20T17:06:02Z" finished-at="2018-08-20T17:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="4597" started-at="2018-08-20T17:06:07Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:06:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@ams.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sasasasa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="158" started-at="2018-08-20T17:06:11Z" finished-at="2018-08-20T17:06:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="10289" started-at="2018-08-20T17:06:11Z" finished-at="2018-08-20T17:06:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="2992" started-at="2018-08-20T17:06:22Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:06:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="110" started-at="2018-08-20T17:06:25Z" finished-at="2018-08-20T17:06:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="setup" is-config="true" duration-ms="6723" started-at="2018-08-20T17:06:25Z" finished-at="2018-08-20T17:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="verifyLoginToAddressBookWithInvalidCredentials" duration-ms="3739" started-at="2018-08-20T17:06:31Z" data-provider="invalidCredentials" finished-at="2018-08-20T17:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAddressBookWithInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="tearDown" is-config="true" duration-ms="133" started-at="2018-08-20T17:06:35Z" finished-at="2018-08-20T17:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginToAddressBookWithInvalidCredentials status=SUCCESS method=LoginPageTest.verifyLoginToAddressBookWithInvalidCredentials(java.lang.String, java.lang.String)[pri:5, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="stopTunnel()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="stopTunnel" is-config="true" duration-ms="5496" started-at="2018-08-20T17:06:35Z" finished-at="2018-08-20T17:06:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTunnel -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.saucelabs.addressbook.tests.LoginPageTest@5876a9af]" name="endReport" is-config="true" duration-ms="192" started-at="2018-08-20T17:06:41Z" finished-at="2018-08-20T17:06:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.saucelabs.addressbook.tests.LogoutPageTest -->
+      </class> <!-- com.saucelabs.addressbook.tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,15 +8,21 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.saucelabs.ci.sauceconnect.*;
+import com.saucelabs.ci.sauceconnect.AbstractSauceTunnelManager.SauceConnectException;
 
 
 /**
@@ -29,10 +35,41 @@ public class LoginPageTest extends TestBase {
 	
 	LoginPage loginPage;
 	LogoutPage logoutPage;
+	Process tunnel;
+
+    public SauceConnectFourManager sauceFourTunnelManager = new SauceConnectFourManager(); 
 
 	public LoginPageTest() {
 		super();
 	}
+/*	
+	@BeforeClass
+	public void startTunnel() throws SauceConnectException {
+				tunnel = sauceFourTunnelManager.openConnection(
+				 "muralitulugu",      // username
+				 "a82b8eed-57dd-43f1-a10e-496ebdf2f3e8",       // apiKey
+				 4445,           // port
+				 null,           // sauceConnectJar
+				 "--tunnel-identifier El_Chapo_Tunnel --no-remove-colliding-tunnels --pidfile /tmp/pid1.log",  // Tunnel options as String
+				 null,           // printStream
+				 null,           // verboseLogging
+				 null            // sauceConnectPath
+				 );
+		System.out.println("Started Tunnel");
+	}
+	
+	@AfterClass
+	public void stopTunnel() throws SauceConnectException {
+		
+		sauceFourTunnelManager.closeTunnelsForPlan(
+				"muralitulugu",      // username (same as start tunnel)
+				"--tunnel-identifier El_Chapo_Tunnel",  // tunnelOptions (same as start tunnel)
+				  null);
+		
+		System.out.println("Stopped Tunnel");
+
+		
+	}*/
 	
 	@BeforeTest
 	public void setExtent(){
@@ -57,7 +94,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@BeforeMethod
-	public void setup(){
+	public void setup() throws MalformedURLException{
 	  
 		//logger.info("Before calling launchBrowser()");
 		launchBrowser();

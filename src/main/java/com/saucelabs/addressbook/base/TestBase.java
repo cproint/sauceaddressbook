@@ -4,14 +4,19 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 
@@ -44,6 +49,13 @@ public class TestBase extends DriverInit {
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 	
+    public String username = System.getenv("SAUCE_USERNAME");
+
+    public String accesskey = System.getenv("SAUCE_ACCESS_KEY");
+    
+	public final String URL = "https://" + username + ":" + accesskey + "@ondemand.saucelabs.com:443/wd/hub";
+
+	
 	public TestBase() {
 
 		prop = new Properties();
@@ -65,12 +77,24 @@ public class TestBase extends DriverInit {
 
 	}
 	
-	public  void launchBrowser(){
+	public  void launchBrowser() throws MalformedURLException{
 		
-		browser = prop.getProperty("browser");
-				
-		DriverInit instanceDriver = DriverInit.getInstance();
-		driver = instanceDriver.openBrowser(browser);
+		// Commented out from original TestBase which uses DriverInt
+		//browser = prop.getProperty("browser");				
+		//DriverInit instanceDriver = DriverInit.getInstance();		
+		//driver = instanceDriver.openBrowserWithOptions(browser);
+		
+		
+       
+		// Added so that tests run on Sauce Platform
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setCapability("extendedDebugging", true);
+        driver = new RemoteWebDriver(new java.net.URL(URL), chromeOptions);
+
+		
+		
+		
+		
 		e_driver = new EventFiringWebDriver(driver);
 		//Now create object of EventListnerHandler to register with EventFiringWebDriver
 		eventListner = new WebEventListner();
